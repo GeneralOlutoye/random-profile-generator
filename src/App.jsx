@@ -30,7 +30,7 @@ export const App = () => {
         <h1>{item.name?.title} {item.name?.first} {item.name?.last} </h1>
         <p> {item.email} </p>
         <span> {item.cell} </span>
-        <h3> <IoLocation /> {item.location?.country} {item.location?.state} </h3>
+        <h3> <IoLocation /> {item.location?.country}, {item.location?.state} </h3>
         </>)}
         <Button className="button" onClick={()=>ProfileData()} type='primary' > New Profile </Button>
       </Card>
