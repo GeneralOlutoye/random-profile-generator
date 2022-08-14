@@ -28,7 +28,7 @@ export const App = () => {
       <Card className="cardWrapper">
         {state.results?.map(item => <>
         {/* <div className="cardHeader"></div> */}
-        <img src={item.picture?.large} alt="picture" className='cardImg' />
+        <img src={item.picture?.large} alt="profilePicture" className='cardImg' />
         <h1>{item.name?.title} {item.name?.first} {item.name?.last} </h1>
         <p> < MdEmail/> {item.email} </p>
         <span> <FaMobile /> {item.cell} </span>
