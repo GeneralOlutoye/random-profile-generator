@@ -15,6 +15,7 @@
 .container .cardWrapper{
     display: flex;
     flex-direction: column;
+    justify-content:end;
     align-items: center;
     text-align: center;
     height: 500px;
@@ -28,14 +29,20 @@
 }
 
 .container .cardWrapper .cardHeader{
-    text-align: left;
+    background-color: #500d65;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border: 1px solid #fff;
+    height: 200px;
+    width: 300px;
 }
 
 .container .cardWrapper .cardImg{
     border-radius: 50%;
-    top: 20px;
+    top: -60px;
+    position:relative;
     transition: 2s;
-    border: 3px solid #500d65;
+    border: 5px solid #fff;
 }
 
 .container .cardWrapper h1 {
@@ -44,16 +51,16 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: #500d65;
+    margin-top: -20px;
 }
 
 .container .cardWrapper .button{
     text-align: center!important;
-    margin: 0 auto!important;
     background-color: #500d65;
     border: none;
     border-radius: 10px;
     cursor: pointer;
     font-weight: 600;
-    margin-top: 40px;
+    margin-top: 20px;
     transition: color 1s;
 }
