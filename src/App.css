@@ -24,22 +24,18 @@
     border: 1px solid #500d65;
     background-color: #fff;
     box-shadow: 10px 10px 20px rgb(72 0 106 / 55%);
-    animation: colorChanger is infinite;
+    animation: infinite;
 }
 
 .container .cardWrapper .cardHeader{
-    background-color: #500d65;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    height: 200px;
-    width: 300px;
+    text-align: left;
 }
 
 .container .cardWrapper .cardImg{
     border-radius: 50%;
     top: 20px;
     transition: 2s;
-    border: 5px solid #500d65;
+    border: 3px solid #500d65;
 }
 
 .container .cardWrapper h1 {
