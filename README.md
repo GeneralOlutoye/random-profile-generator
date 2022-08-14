@@ -1,1 +1,2 @@
-A random profile generating app built with react which consumes the randomUser.me API. Random profiles are displayed with location, email and mobile number. https://github.com/GeneralOlutoye/random-profile-generator
+A random profile generating app built with react which consumes the randomUser.me API. Random profiles are displayed with location, email and mobile number. 
+weblink: https://joel-profilegenerator.netlify.app/
