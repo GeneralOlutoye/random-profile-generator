@@ -29,7 +29,7 @@ export const App = () => {
         {state.results?.map(item => <>
         <div className="cardHeader"></div>
         <img key={item.id} src={item.picture?.large} alt="profilePics" className='cardImg' />
-        <h1 key={item.id}>{item.name?.title} {item.name?.first} {item.name?.last} </h1>
+        <h1>{item.name?.title} {item.name?.first} {item.name?.last} </h1>
         <p> < MdEmail/> {item.email} </p>
         <span> <FaMobile /> {item.cell} </span>
         <h3> <IoLocation /> {item.location?.country}, {item.location?.state} </h3>
