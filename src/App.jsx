@@ -17,7 +17,6 @@ export const App = () => {
     }).catch(error => setState(error))
   };
 
-
   useEffect(() => {
     ProfileData()
   }, [])
@@ -26,14 +25,14 @@ export const App = () => {
   return (
     <div className='container' >
       <Card className="cardWrapper">
-        {state.results?.map(item => <>
+        {state.results?.map(item => <div key={item.id}>
         <div className="cardHeader"></div>
-        <img key={item.id} src={item.picture?.large} alt="profilePics" className='cardImg' />
-        <h1 key={item.key}>{item.name?.title} {item.name?.first} {item.name?.last} </h1>
-        <p key={item.id}> < MdEmail/> {item.email} </p>
-        <span key={item.id}> <FaMobile /> {item.cell} </span>
-        <h3 key={item.id}> <IoLocation /> {item.location?.country}, {item.location?.state} </h3>
-        </>)}
+        <img src={item.picture?.large} alt="profilePics" className='cardImg' />
+        <h1>{item.name?.title} {item.name?.first} {item.name?.last} </h1>
+        <p> < MdEmail/> {item.email} </p>
+        <span> <FaMobile /> {item.cell} </span>
+        <h3> <IoLocation /> {item.location?.country}, {item.location?.state} </h3>
+        </div>)}
         <Button className="button" onClick={()=>ProfileData()} type='primary' > New Profile </Button>
       </Card>
     </div>

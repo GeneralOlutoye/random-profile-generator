@@ -25,15 +25,15 @@
     border: 1px solid #500d65;
     background-color: #fff;
     box-shadow: 10px 10px 20px rgb(72 0 106 / 55%);
-    animation: colorChanger infinite;
-    animation-duration: 1s;
-    animation-timing-function: ease;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    animation-fill-mode: none;
-    animation-play-state: running;
-    animation-name: colorChanger;
+    -webkit-o-animation: colorChanger infinite;
+    -webkit-o-animation-duration: 1s;
+    -webkit-o-animation-timing-function: ease;
+    -webkit-o-animation-delay: 0s;
+    -webkit-o-animation-iteration-count: infinite;
+    -webkit-o-animation-direction: normal;
+    -webkit-o-animation-fill-mode: none;
+    -webkit-o-animation-play-state: running;
+    -webkit-o-animation-name: colorChanger;
 }
 
 .container .cardWrapper .cardHeader{
@@ -51,7 +51,7 @@
     position:relative;
     transition: 2s;
     margin-bottom: -30px;
-    border: 5px solid #fff;
+    border: 7px solid #fff;
 }
 
 .container .cardWrapper h1 {
